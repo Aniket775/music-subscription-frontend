@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .box{
+            background-color: white;
+            height: 70%;
+            width: 20%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 0.75) 0%, rgba(252, 70, 107, 0.77) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img{
+            width: 100%;
+            height: 20vh;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .contentbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .contentbox p{
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .contentbox h2{
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+
+        .planbox{
+            height: 6vh;
+            width: 15vw;
+            background-color: rgba(157, 157, 218, 0.89);
+            /* padding: 20px; */
+            margin: 20px;
+            align-self: center;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .buttonbox{
+            align-self: center;
+
+        }
+
+        .buttonbox button{
+               height: 6vh;
+            width: 15vw;
+            background-color: rgba(36, 36, 96, 0.89);
+            /* padding: 20px; */
+            margin: 20px;
+            align-self: center;
+            border-radius: 12px;
+            color: white;
+           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .cancel{
+            align-self: center;
+            box-shadow: rgba(130, 50, 7, 0.799) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+           
+        }
+        .cancel a{
+ 
+             text-decoration: none;
+            color: rgb(151, 17, 17);
+            font-weight: bold;
+        }
+          .leftbox{
+            margin-left: 0px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+          }
+        .leftbox img{
+               height: 30px;
+               width: 30px;
+               border-radius: 10px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+             <img src="pngtree-abstract-music-notes-on-blue-background-image_16297270.jpg" alt="music bg">
+            </div>
+            <div class="contentbox">
+              <h2>Order summary</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eum veniam commodi libero nesciunt et!</p>
+            </div>
+            
+            <div class="planbox">
+             <div class="leftbox">
+              <img src="images.jpg" alt="icon">
+             <div class="text">
+              <p>Annual plan</p>
+              <p>$99/year</p>
+              </div>
+             </div>
+
+             <div class="rightbox">
+              <a href="#">Change</a>
+             </div>
+            </div>
+
+            <div class="buttonbox">
+              <button>
+                Proceed to payment
+              </button>
+            </div>
+
+            <div class="cancel">
+                <a href="#">Cancel purchase</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
